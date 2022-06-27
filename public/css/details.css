@@ -1,0 +1,71 @@
+section.payments {
+  padding: 16px;
+  margin-bottom: 80px;
+}
+
+section.payments div.filter {
+  display: flex;
+}
+
+section.payments span.full-details {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+}
+
+section.payments span.add {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+}
+
+section.payments span.material-icons.font-16 {
+  margin: 0 4px;
+}
+
+section.payments .daily {
+  margin: 25px 0;
+}
+
+section.payments div.daily-title {
+  display: flex;
+  border-bottom: #f9f9f9 1px solid;
+  padding-bottom: 10px;
+}
+
+section.payments .day {
+  flex: 1;
+  display: flex;
+  font-size: 12px;
+  color: #adb3c4;
+}
+
+section.payments .payment {
+  display: flex;
+  font-size: 13px;
+}
+
+section.payments .daily-detail {
+  display: flex;
+  margin: 18px 0;
+}
+
+section.payments .daily-detail-goods {
+  flex: 1;
+  margin: 0 8px;
+}
+
+section.payments .place {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+section.payments .note {
+  font-size: 10.5px;
+  color: #adb3c4;
+}
+
+section.payments .daily-payment {
+  font-size: 14.5px;
+}
