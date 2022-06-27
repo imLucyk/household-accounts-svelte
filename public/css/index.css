@@ -1,0 +1,185 @@
+.font-16 {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+}
+
+header span.title {
+  flex: 1;
+}
+
+header span.icons {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 10px;
+}
+
+header #alarm-counter {
+  position: absolute;
+  display: flex;
+  min-width: 12px;
+  min-height: 12px;
+  background: #ee3847;
+  border: 1px solid #e03442;
+  border-radius: 12px;
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  top: -6px;
+  right: -6px;
+}
+
+header #alarm-counter .counter {
+  margin: 0px 3.5px;
+}
+
+nav.month {
+  display: flex;
+  align-items: center;
+}
+
+nav.month span.month {
+  font-size: 24px;
+}
+
+nav.month span.material-icons {
+  margin: 4px;
+}
+
+section.current {
+  display: flex;
+  align-items: center;
+  border-bottom: 12px solid #f9f9f9;
+  padding: 16px;
+}
+
+section.current div.amount {
+  flex: 1;
+}
+
+section.current div.amount ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+section.current div.amount ul li {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+}
+
+section.current div.amount span.label {
+  font-size: 14px;
+  color: #5a5b67;
+  margin-right: 10px;
+}
+
+section.current div.amount span.amount {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+section.current div.amount span.amount.income {
+  color: rgb(72, 198, 108);
+}
+
+section.current div button.analysis {
+  border: none;
+  padding: 16px;
+  border-radius: 6px;
+  color: #222222;
+}
+
+section.current div.amount span.amount {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+nav.pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav.pages ul {
+  display: flex;
+  list-style: none;
+  position: fixed;
+  padding-left: 0;
+  bottom: 88px;
+  width: 70%;
+  background-color: #f5f5f5;
+  border-radius: 30px;
+  margin: 0;
+}
+
+nav.pages li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 7px;
+  border: none;
+  border-radius: 30px;
+  font-size: 12px;
+  border: #f5f5f5 3px solid;
+}
+
+nav.pages li a {
+  color: #8b8f9b; 
+}
+
+nav.pages li.active {
+  background-color: #18c4b9;
+  font-weight: 500;
+}
+
+nav.pages li.active a {
+  color: #ffffff;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  position: fixed;
+  padding-left: 0;
+  border-top: #f9f9f9 1px solid ;
+  padding: 10px 0 20px;
+  bottom: 0px;
+  width: 100%;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+footer li {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  -webkit-transform: scale(0.8);
+}
+
+footer li .icon-title {
+  color: #adb3c4;
+  margin-top: 5px;
+}
+
+footer li .active {
+  color: #000000;
+}

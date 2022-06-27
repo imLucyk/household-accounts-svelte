@@ -1,0 +1,70 @@
+section.budget {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 16px;
+  margin-bottom: 80px;
+}
+
+section.budget article.guide {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section.budget article.guide div.title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+section.budget article.guide div.subtitle {
+  font-size: 12px;
+  margin: 8px 0;
+  color: #a4a7b2;
+}
+
+section.budget article.monthly-budget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: #f5f5f5 1px solid;
+  margin: 26px auto;
+  padding: 6px 4px;
+  width: 70%;
+}
+
+section.budget article.monthly-budget span.monthly-budget {
+  font-size: 10px;
+}
+
+section.budget article.monthly-budget span.pre-month-budget {
+  flex: 1;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+
+section.budget article.bottons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section.budget button.copy-budget {
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  background-color: rgb(216, 248, 244);
+  color: #18c4b9;
+  font-weight: 500;
+  width: 100%;
+}
+
+section.budget div.pre-month-budget {
+  font-size: 11px;
+  text-decoration: underline;
+  text-underline-position: under;
+  color: #b1b4bd;
+  margin: 20px 0;
+}
