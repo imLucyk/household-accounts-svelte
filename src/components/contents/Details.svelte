@@ -1,3 +1,9 @@
+<script lang="ts">
+import detailsStore from '../../stores/detailsStore';
+const {details, detail} = detailsStore;
+console.log($details, $detail);
+</script>
+
 <section class="payments">
   <div class="filter">
     <span class="full-details">전체 내역<span class="material-icons font-16">expand_more</span></span>
