@@ -5,8 +5,8 @@ import active from 'svelte-spa-router/active'
 
 <nav class="pages">
   <ul>
-    <li><a href="/" use:link use:active>내역</a></li>
-    <li><a href="/calendar" use:link use:active>달력</a></li>
-    <li><a href="/budget" use:link use:active>예산</a></li>
+    <li href="/" use:active><a href="/">내역</a></li>
+    <li href="/calendar" use:active><a href="/calendar" use:link>달력</a></li>
+    <li href="/budget" use:active><a href="/budget" use:link>예산</a></li>
   </ul>
 </nav>
