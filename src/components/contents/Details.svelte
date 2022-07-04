@@ -7,6 +7,26 @@ const modalToggle = function() {
   document.body.classList.toggle('o-hidden');
   document.getElementsByClassName('modal-background')[0].classList.toggle('active');
 }
+
+const comma = (str) => {
+  str = String(str);
+  return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
+}
+
+const uncomma = (str) => {
+  str = String(str);
+  return str.replace(/[^\d]+/g, '');
+} 
+
+const inputNumberFormat = () => {
+  detail.update(() => {
+    return {
+      ...$detail,
+      prise: Number(uncomma($detail.priseFormat)),
+      priseFormat: comma(uncomma($detail.priseFormat)),
+    };
+  });
+}
 </script>
 
 <section class="payments">
@@ -74,20 +94,32 @@ const modalToggle = function() {
     <table class="modal-table">
       <tbody>
         <tr>
+          <input type="text" maxlength="14" on:keyup="{() => inputNumberFormat()}" bind:value={$detail.priseFormat} />
           <th>
-            <span>Name</span>
+            <span>원</span>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <span>사용처</span>
           </th>
           <td><input type="text" name="grocery-name" placeholder="Name" /></td>
         </tr>
         <tr>
           <th>
-            <span>Enter</span>
+            <span>카테고리</span>
           </th>
-          <td><input type="date" name="grocery-enter" placeholder="YYYY-MM-DD" /></td>
+          <td><input type="date" name="grocery-expire" placeholder="YYYY-MM-DD" /></td>
         </tr>
         <tr>
           <th>
-            <span>Expire</span>
+            <span>결제수단</span>
+          </th>
+          <td><input type="text" name="grocery-name" placeholder="Name" /></td>
+        </tr>
+        <tr>
+          <th>
+            <span>날짜</span>
           </th>
           <td><input type="date" name="grocery-expire" placeholder="YYYY-MM-DD" /></td>
         </tr>
