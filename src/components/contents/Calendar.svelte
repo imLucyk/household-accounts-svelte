@@ -9,12 +9,15 @@
     <span class="week sat">토</span>
   </article>
   <article class="weekly-sum">-537,100원</article>
+  {#each [1, 2, 3, 4, 5] as line, i}
   <article class="week">
+    {#each ['일', '월', '화', '수', '목', '금', '토'] as day, j}
     <div class="days">
-      <div class="number">1</div>
-      <div class="sum">-23,800원</div>
+      <div class="number">{line}주 {i}</div>
+      <div class="sum">{day} {j}</div>
     </div>
-    <div class="days">
+    {/each}
+    <!-- <div class="days">
       <div class="number">2</div>
       <div class="sum"></div>
     </div>
@@ -37,9 +40,10 @@
     <div class="days">
       <div class="number">7</div>
       <div class="sum">-128,500원</div>
-    </div>
+    </div> -->
   </article>
-  <article class="weekly-sum">-391,9300원</article>
+  {/each}
+  <!-- <article class="weekly-sum">-391,9300원</article>
   <article class="week">
     <div class="days">
       <div class="number">8</div>
@@ -100,5 +104,5 @@
       <div class="number unselect">21</div>
       <div class="sum">-128,500원</div>
     </div>
-  </article>
+  </article> -->
 </section>
