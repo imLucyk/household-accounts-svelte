@@ -1,8 +1,9 @@
 <script lang="ts">
 import moment from 'moment';
 const calcDay = function(line, day) {
-  const b = moment().startOf('month')
-  return line*7 + day - b.day();
+  const firstDay = moment().startOf('month');
+  const calc = line*7 + day - firstDay.day();
+  return moment(firstDay).add(calc, 'days').format('D');
 }
 </script>
 
@@ -17,9 +18,9 @@ const calcDay = function(line, day) {
     <span class="week sat">토</span>
   </article>
   <article class="weekly-sum">-537,100원</article>
-  {#each [0, 1, 2, 3, 4] as line, i}
+  {#each [0, 1, 2, 3, 4, 5] as line, i}
   <article class="week">
-    {#each [1, 2, 3, 4, 5, 6, 7] as day, j}
+    {#each [0, 1, 2, 3, 4, 5, 6] as day, j}
     <div class="days">
       <div class="number">{calcDay(line, day)}</div>
       <div class="sum">쓴돈</div>
