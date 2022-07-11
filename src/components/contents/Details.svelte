@@ -16,7 +16,7 @@ const comma = (str) => {
 const uncomma = (str) => {
   str = String(str);
   return str.replace(/[^\d]+/g, '');
-} 
+}
 
 const inputNumberFormat = () => {
   detail.update(() => {
