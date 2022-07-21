@@ -1,0 +1,49 @@
+div.modal-header .title {
+  display: flex;
+  font-size: 14px;
+}
+
+div.modal-header .sum {
+  display: flex;
+  flex: 1;
+}
+
+div.modal-header .line {
+  flex: 1;
+  outline: none;
+  border: 0;
+  border-bottom: 2px solid rgb(72, 198, 108);
+}
+
+div.modal-header span.won {
+  font-size: 26px;
+  font-weight: 600;
+  color: #000000;
+}
+
+div.modal-body ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+div.modal-body ul label {
+  width: 100px;
+}
+
+div.modal-body ul li{
+  display: flex;
+  flex: 1;
+  font-size: 12px;
+  color: #8b8f9b;
+  border-bottom: 1px solid #dddddd;
+  
+}
+
+div.modal-body input[type=text] {
+  flex: 1;
+  border: 0;
+  font-size: 13px;
+  outline: none;
+}
